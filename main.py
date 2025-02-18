@@ -1,6 +1,6 @@
 import os
 
-class BasicOperatingSystem:
+class FileManage:
     def __init__(self):
         self.processes = []
         self.memory = {}
@@ -40,10 +40,10 @@ class BasicOperatingSystem:
 
 # some os operations. create process, allocate memory, create file, read file, list processes, list files
 # change to your liking
-os = BasicOperatingSystem()
-os.create_process(1, "Process 1 data")
-os.allocate_memory(1, 256)
-os.create_file("file1.txt", "Hello, World!")
-os.read_file("file1.txt")
-os.list_processes()
-os.list_files()
+fm = FileManage()
+fm.create_process(1, "Process 1 data")
+fm.allocate_memory(1, 256)
+fm.create_file("file1.txt", "Hello, World!")
+fm.read_file("file1.txt")
+fm.list_processes()
+fm.list_files()
